@@ -14,6 +14,8 @@ public class DeleteCustomerModule {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		Reporter.log("Maven Project", true);
+		driver.get("https://www.google.com");
+		System.out.println(driver.getTitle());
 		driver.quit();
 	}
 	
